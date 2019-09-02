@@ -4,6 +4,7 @@ import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
 import HTMLBasic from './TransferToMaterial/HTMLBasic'
 import HTMLIntermediate from './TransferToMaterial/HTMLIntermediate'
 import HTMLAdvanced from './TransferToMaterial/HTMLAdvanced'
+var x = 0;
 export class MaterialCode extends Component {
    state = {
     material:[
@@ -20,8 +21,9 @@ export class MaterialCode extends Component {
             <>
              
             {this.state.material.map((item,index)=>{
-                  return  <MaterialBox material={item} key={index}/>
+                  return  <MaterialBox material={item} key={index} a={x++} b={x++} c={x++}/>
             })}
+            {x=0}
             
             </>
         )

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import {Link}from 'react-router-dom'
 
 export class MaterialBox extends Component {
   state={
@@ -8,7 +8,7 @@ export class MaterialBox extends Component {
   }  
   
   insertMaterial=()=>{
-      console.log("kkk")
+      // console.log("kkk")
       this.setState({
         showMaterial:!this.state.showMaterial
       })
@@ -18,7 +18,7 @@ export class MaterialBox extends Component {
 
     render() {
         // console.log(this.props.material)
-        const{material}=this.props
+        const{material,a,b,c}=this.props
         
         return (
             <>
@@ -31,9 +31,9 @@ export class MaterialBox extends Component {
                 {(this.state.showMaterial)?(
                   
                    <ul className="list-grou ">
-                   <a href="HTMLBasic"> <li className="list-group-item">{material.m1}</li></a>
-                   <a href="#"> <li className="list-group-item">{material.m2}</li></a>
-                   <a href="#"> <li className="list-group-item">{material.m3}</li></a>
+                    <Link to={`/material/${a}`}><li className="list-group-item">{material.m1}</li></Link>  
+                     <Link to={`/material/${b}`}><li className="list-group-item">{material.m2}</li></Link> 
+                     <Link to={`/material/${c}`}><li className="list-group-item">{material.m3}</li></Link> 
                 </ul> 
           
                 ): null}
