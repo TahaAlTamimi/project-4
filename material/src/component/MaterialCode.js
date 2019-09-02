@@ -16,7 +16,10 @@ export class MaterialCode extends Component {
      
         return (
             <>
-              <MaterialBox material={this.state.material}/>
+            {this.state.material.map((item,index)=>{
+                  return  <MaterialBox material={item} key={index}/>
+            })}
+              
             </>
         )
     }
