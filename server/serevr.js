@@ -3,7 +3,7 @@ const app=express();
 app.get('/home/materials',(req,res)=>{
     const materials=
        [
-            {id:1,name:"HTML",m1:"Basic",m2:"intermediate",m3:"advance"},
+            {id:1,name:"HTMLxxx",m1:"Basic",m2:"intermediate",m3:"advance"},
             {id:1,name:"CSS",m1:"Basic",m2:"intermediate",m3:"advance"},
             {id:1,name:"javaScript",m1:"Basic",m2:"intermediate",m3:"advance"},
          ]
