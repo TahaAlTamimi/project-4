@@ -1,18 +1,24 @@
 import React, { Component } from 'react'
 
 export class Header extends Component {
+    state={HeaderShow:false}
 
     render() {
+
         return (
             <>
             
             <div className="mr-auto" style={{backgroundColor:"orange"}}>
             
-            <ul class="text-warning nav nav-pills nav justify-content-center  ">
+            <ul className="text-warning nav nav-pills nav justify-content-center  ">
            
-            <li class="nav-item text-warning ">
-             <a class="text-warning " href="/">Home</a>
-             <a class="text-warning " href="/material">Back to Material</a>
+            <li className="nav-item text-warning ">
+             <a className="text-warning " href="/">Home</a>
+             
+             {this.state.HeaderShow?(
+                 <a className="text-warning " href="/material">Back to Material</a>   
+             ):null}
+             
             </li>
             </ul>
             

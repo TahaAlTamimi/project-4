@@ -14,12 +14,14 @@ import JSIntermediate from './component/TransferToMaterial/JSIntermediate'
 import JSAdvance from './component/TransferToMaterial/JSAdavance'
 
 export class App extends PureComponent {
+  state={HeaderShow:true}
   render() {
     return (
       
       <div>
        <Router>
-                <Header/>
+         <Header/>
+                
                 <Switch>
                  <Route path="/" exact component={Home}/>
                  <Route  path="/material" exact component={MaterialCode}/>

@@ -5,13 +5,14 @@
   "main": "serevr.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node.js",
-    "server":"nodemon server.js"
+    "start": "node.js",
+    "server": "nodemon server.js"
   },
   "author": "Mohammad Al-Tamimi",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "concurrently": "^4.1.2",
     "express": "^4.17.1"
   },
   "devDependencies": {
